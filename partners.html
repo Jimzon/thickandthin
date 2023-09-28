@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Thick and Thin Cafe</title>
+  </head>
+
+
+  <body>
+    <!-- Hero Section -->
+    <section id="hero" class="bg-cover bg-center bg-no-repeat" style="background-image: url(./images/bg-test.png)">
+      <div class="">
+        <nav class="flex container max-w-6xl px-6 py-8 items-end justify-between font-bold  text-white">
+            <a href="index.html">
+             <img src="images/logo.png" alt="" class="w-20" />
+           </a>
+             
+             <div class="hidden h-10 text-white font-normal md:flex md:space-x-8">
+               <div class="group">
+                 <a href="index.html#about-us">About Us</a>
+                 <div class="mx-2 border-b-thickprimary group-hover:border-b-2 group-hover:border-thickprimary transition-all group:duration-500"></div>
+               </div>
+               <div class="group">
+                 <a href="index.html#donuts">Our Donuts</a>
+                 <div class="mx-2 border-b-thickprimary group-hover:border-b-2 group-hover:border-thickprimary transition-all group:duration-500"></div>
+               </div>
+               <div class="group">
+                 <a href="partners.html">Partners</a>
+                 <div class="mx-2 border-b-thickprimary group-hover:border-b-2 group-hover:border-thickprimary transition-all group:duration-500"></div>
+               </div>
+               <div class="group">
+                 <a href="index.html#updates">Updates</a>
+                 <div class="mx-2 border-b-thickprimary group-hover:border-b-2 group-hover:border-thickprimary transition-all group:duration-500"></div>
+               </div>
+             </div>
+             <!-- Hamburger Button -->
+               <div class="md:hidden">
+               <button
+                 id="menu-btn"
+                 type="button"
+                 class="z-40 block hamburger md:hidden focus:outline-none"
+               >
+                 <span class="hamburger-top"></span>
+                 <span class="hamburger-middle"></span>
+                 <span class="hamburger-bottom"></span>
+               </button>
+               </div>
+           </nav>
+         </div>
+       
+         <div class="container max-w-6xl mx-auto px-6  py-12">
+         
+           <!-- Mobile Menu -->
+           <div
+           id="menu"
+           class="z-10 bg-cover bg-center bg-no-repeat absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full h-[75%] py-5 pt-40 pl-12 space-y-3 text-2xl text-white uppercase bg-thickprimary" style="background-image: url(./images/bg-test.png)"
+         >
+           <a href="#about-us" class="hover:text-thickprimary">– About</a>
+           <a href="index.html#donuts" class="hover:text-thickprimary">– Our Donuts</a>
+           <a href="partners.html" class="hover:text-thickprimary"> – Be Our Partner</a>
+           <a href="#updates" class="hover:text-thickprimary"> – Updates</a>
+             </div>
+        <div class="block md:flex bg-cover bg-center bg-no-repeat" style="background-image: url(./images/partners-herobg.png);">
+          <div class="py-36 items-center text-center justify-center mx-auto">
+             <div class="flex gap-2 pl-6 md:pl-0 mx-auto md:gap-20 pt-24">
+                <form action="#franchise">
+                    <button class="border font-medium text-lg !border-thickprimary bg-opacity-90 bg-thickprimary hover:scale-105 duration-500 rounded-xl p-2.5 px-3 text-gray-50">
+                        Own a Franchise
+                    </button>
+                </form>
+                <form action="#invest">
+                    <button class="border font-medium text-lg !border-thickprimary bg-opacity-90 bg-thickprimary hover:scale-105 duration-500 rounded-xl p-2.5 px-3 text-gray-50">
+                        Invest with Us
+                    </button>
+                </form>
+             </div>
+
+            
+          </div>
+          <div>
+             <!-- <img src="images/donut-bg.svg" alt="" class=""> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Franchise Process Section -->
+  <section id="franchise" class="py-6 pb-16">
+
+<div class="container">
+  <img src="./images/info.png" alt="" class=" mx-auto w-[80%] md:hidden">
+</div>
+
+    <div class="container max-w-6xl mx-auto pt-12 ">
+          <div class="text-center max-w-lg mx-auto">
+            <h1 class=" text-3xl font-medium p-2"> Franchise Process </h1>
+          </div>
+    </div>
+
+    <div class="block max-w-4xl container items-center text-center justify-center mx-auto">
+ 
+        <div class="items-center mx-auto block md:flex gap-2"> 
+            <img src="./images/1.png" alt="" class="w-full md:w-[30%] mx-auto">
+           <div class="text-center md:text-left">
+            <h1 class=" text-2xl">
+                01. INQUIRY
+            </h1>
+            <p class="w-full md:max-w-xs ">
+            Submit basic information such as name and contact with our google form. <a href="https://bit.ly/3SYHtEy" class="underline text-semibold text-lg text-thickprimary hover:text-opacity-80">Click here</a>
+            </p>
+            </div>
+        </div>
+        <div class="items-center mx-auto block md:flex flex-row-reverse gap-2"> 
+            <img src="./images/2.png" alt="" class="w-full md:w-[30%] mx-auto">
+           <div class="text-center md:text-left">
+            <h1 class=" text-2xl">
+                02. SELECTION PROCESS
+            </h1>
+            <p class="w-full md:max-w-xs ">
+                Our potential partner candidate will be asked to submit in-depth background, 
+                business plan, and financial information.
+            </p>
+            </div>
+        </div>
+        <div class="items-center mx-auto block md:flex gap-2"> 
+            <img src="./images/3.png" alt="" class="w-full md:w-[30%] mx-auto">
+           <div class="text-center md:text-left">
+            <h1 class=" text-2xl">
+                03. LEGAL
+            </h1>
+            <p class="w-full md:max-w-xs ">
+                Based upon your submission, we will further shortlist the applicants and invite them 
+                to participate in the next phase of the process. 
+                The terms and conditions of the contracts will be discussed at that point in time.
+            </p>
+            </div>
+        </div>
+        <div class="items-center mx-auto block md:flex flex-row-reverse gap-2"> 
+            <img src="./images/4.png" alt="" class="w-full md:w-[30%] mx-auto">
+           <div class="text-center md:text-left">
+            <h1 class=" text-2xl">
+                04. PRE-OPENING
+            </h1>
+            <p class="w-full md:max-w-xs ">
+                Complete training program, store design, and conduct marketing campaign.
+            </p>
+            </div>
+        </div>
+        <div class="items-center mx-auto block md:flex gap-2"> 
+            <img src="./images/5.png" alt="" class="w-full md:w-[30%] mx-auto">
+           <div class="text-center md:text-left">
+            <h1 class=" text-2xl">
+                05. NEW STORE GRAND OPENING
+            </h1>
+            <p class="w-full md:max-w-xs ">
+                Grand opening of your own store!
+            </p>
+            </div>
+        </div>
+        <div class="pt-12 mx-auto text-center hidden md:block">
+          <a href="./images/info.png" class="underline text-lg hover:text-thickprimary">
+                  Learn More
+          </a>
+      </div>
+
+        <div class="pt-12">
+            <form action="https://bit.ly/3SYHtEy">
+                <button class="border font-medium text-lg !border-thickprimary bg-opacity-70 bg-thickprimary hover:bg-transparent hover:text-thickprimary duration-500 rounded-sm p-2.5 px-16 text-gray-50">
+                    Own a Franchise
+                </button>
+            </form>
+        </div>
+        
+    </div>
+  </section>
+
+  <!-- Invest Section -->
+  <section id="invest" class="py-6 pb-16 ">
+    <div class="container  mx-auto pt-12 border-t-2 ">
+          <div class="text-center max-w-lg mx-auto ">
+            <h1 class="text-2xl font-medium p-2">Be part of the Thick and Thin growth 
+                and be one of our company's shareholder.  </h1>
+          </div>
+    </div>
+
+   <div class="container">
+    <img src="./images/team.svg" alt="" class="mx-auto p-6 h-1/2">
+   
+    <div class="pt-12 mx-auto text-center">
+        <form action="./data/Investor-and-TTC-Management-Agreement.docx">
+            <button class="border font-medium text-lg !border-thickprimary bg-opacity-70 bg-thickprimary hover:bg-transparent hover:text-thickprimary duration-500 rounded-sm p-2.5 px-16 text-gray-50">
+                View Information
+            </button>
+        </form>
+    </div>
+   </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-black py-24 pb-24 md:pb-6 border-t border-gray-50 border-opacity-30 bg-cover bg-no-repeat" style="background-image: url(./images/bg-test.png);">
+  <div class="px-6 container mb-14">
+      <div class="block md:flex justify-between px-6">
+          <!-- footer text -->
+          <div class="space-y-4 gap-2 md:col-span-1 col-md-4 text-center md:text-left ">
+              <a href="partners.html">
+                  <img class="w-32 " src="./images/logo.png" alt="">
+              </a>
+              <a href="index.html">
+                <img src="./images/sprinkle3.png" alt="" class="w-32 md:w-32 pt-4">
+              </a>
+          </div>
+          <!-- footer links -->
+          <div class="mt-12  grid grid-cols-2 gap-4  md:grid-cols-3 md:mt-0 col-md-8">
+                      <div class=" space-y-4 text-gray-200">
+                          <a href="#" class="text-base  hover:text-thickprimary block">
+                              Company
+                          </a>
+                          <a href="#" class="text-base  hover:text-thickprimary block">
+                              About Us
+                          </a>
+                          <a href="#" class="text-base  hover:text-thickprimary block">
+                              Our Donuts
+                          </a>
+                      </div>
+                      <div class="space-y-4">
+                          <a href="#" class="text-base text-gray-200 hover:text-thickprimary block">
+                              Partnerships
+                          </a>
+                          <a href="#" class="text-base text-gray-200 hover:text-thickprimary block">
+                              Stores
+                          </a>
+                          <a href="#" class="text-base text-gray-200 hover:text-thickprimary block">
+                              Contact Us
+                          </a>
+                      </div>
+                      <div class="space-y-4">
+                        <a href="#" class="text-base text-gray-200 hover:text-thickprimary block">
+                          Support
+                      </a>
+                      <a href="#" class="text-base text-gray-200 hover:text-thickprimary block">
+                          Terms and Conditions
+                      </a>
+                      <a href="#" class="text-base text-gray-200 hover:text-thickprimary block">
+                          Privacy Policy
+                      </a>
+                      </div>
+                      <div class="md:hidden col-md-2  gap-4 items-center">
+                        <h3 class="text-white">Get in Touch</h3>
+                        <div class="flex gap-2 mt-2 text-white">
+                          <a href="#" class=" hover:text-thickprimary text-lg">
+                            <i class="bi bi-facebook"></i>
+                          </a>
+                          <a href="#" class="whitetext hover:text-thickprimary text-lg">
+                            <i class="bi bi-instagram"></i>
+                          </a>
+                      </div>
+          </div>
+          </div>
+       </div>
+    </div>
+  <!-- copyright -->
+  <div class=" container px-12 pt-8 ">
+      <div class="md:flex block items-center border-t border-gray-50 border-opacity-30 justify-between">
+          <div class="col-md-10 pt-8 ">
+            <p class="text-white pb-2">©Thick and Thin 2023 - All Rights Reserved</p>
+          </div>
+          <div class="hidden md:flex flex-col text-left gap-0 pt-6 ">
+            <h3 class="text-white">Get in Touch</h3>
+            <div class="flex gap-2 mt-2 text-white">
+                <a href="https://www.facebook.com/ThickAndThinDonuts" class=" hover:text-thickprimary text-lg">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/thickandthin.donuts/" class="whitetext hover:text-thickprimary text-lg">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+          </div>
+          </div>
+      </div>
+  </div>
+
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+      
+    </script>
+
+
+  </body>
+</html>
